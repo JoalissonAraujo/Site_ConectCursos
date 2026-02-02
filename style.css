@@ -9,6 +9,7 @@
 /* Corpo */
 body {
     background-color: #f5f7fa;
+    line-height: 1.6;
 }
 
 /* Header */
@@ -17,24 +18,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     height: 90px;
-    padding: 0px 60px;
-
+    padding: 0 60px;
     background: linear-gradient(90deg, #103297, #0b4dbb);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-
-    
 }
 
 /* Logo */
 .logo img {
     height: 250px;
-    margin-top: 10px; /* faz a logo “invadir” o header */
-    margin-left: 300px;
+    margin-top: 10px;
     padding: 10px;
     transition: transform 0.3s ease;
-    
 }
 
 .logo img:hover {
@@ -45,7 +40,6 @@ body {
 .menu {
     display: flex;
     gap: 30px;
-    margin-right: 400px;
 }
 
 .menu a {
@@ -78,39 +72,25 @@ body {
     color: #dce6ff;
 }
 
-/* Responsivo */
-@media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        height: auto;
-        padding: 20px;
-    }
-
-    .logo img {
-        height: 110px;
-        margin-top: 0;
-    }
-
-    .menu {
-        gap: 20px;
-    }
-}
-
+/* Categoria */
 .categoria {
-    margin: 10px 400px;
+    margin: 5px auto;
     padding: 5px;
+    max-width: 1200px;
 }
 
 .categoria h2 {
     margin-bottom: 15px;
     color: #103297;
+    text-align: center;
 }
 
-
+/* Carousel */
 .carousel-container {
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .carousel {
@@ -119,41 +99,26 @@ body {
     overflow-x: auto;
     scroll-behavior: smooth;
     padding: 10px;
+    max-width: 800px;
 }
 
 .carousel::-webkit-scrollbar {
     display: none;
 }
 
-
 .carousel img {
-    height: 160px;
+    height: 140px;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease;
+    flex-shrink: 0;
 }
 
 .carousel img:hover {
     transform: scale(1.05);
 }
 
-/*
-.btn {
-    background: #103297;
-    color: white;
-    border: none;
-    font-size: 20px;
-    padding: 5px 14px;
-    cursor: pointer;
-    border-radius: 70%;
-    transition: background 0.3s;
-}
-
-.btn:hover {
-    background: #0b4dbb;
-}
-*/
-
+/* Botões do Carousel */
 .btn {
     background: none;
     border: none;
@@ -170,14 +135,16 @@ body {
 .btn:hover .arrow-gif {
     transform: scale(1.15);
 }
-/*----------------------*/
-.curso_position{
-    color:#103297;
-    margin-top: 100px;
-    margin-left: 300px;
-    padding: 30px;
+
+/* Seção de Cursos */
+.curso_position {
+    color: #103297;
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
 }
 
+/* Quem Somos */
 .quem-somos {
     background-color: #ffffff;
     padding: 80px 20px;
@@ -193,6 +160,7 @@ body {
     font-size: 36px;
     color: #103297;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .quem-somos p {
@@ -202,165 +170,7 @@ body {
     margin-bottom: 20px;
 }
 
-.hero {
-    position: relative;
-    height: 50vh;
-    overflow: hidden;
-}
-
-/*
-.hero video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transform: translate(-50%, -50%);
-}
-
-.hero-content {
-    position: relative;
-    z-index: 2;
-    color: white;
-    text-align: center;
-}
-    */
-
-.gif_1 {
-    width: 120px;     /* largura */
-    height: auto;     /* mantém proporção */
-    margin-top: -600px;   /* desce */
-    margin-left: -50px; /* vai pra esquerda */
-
-    
-    top: -400px;
-    left: 60px;
-}
-
-.gif_back{
-    width: 150px;     /* largura */
-    height: auto; 
-    margin-left: 320px;
-    margin-top: 0px;
-}
-
-.gif_2{
-    width: 360px; 
-    height: auto;
-    margin-left: 90px;
-    margin-top: -80px;
-}
-
-.seta{
-    width: 50px; 
-    height: auto;
-    margin-left: 90px;
-    margin-top: -80px;
-}
-
-
-.contato {
-    background-color: #ffffff;
-    padding: 80px 20px;
-    position: relative;
-    margin-top: 400px;
-}
-
-.contato-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    text-align: justify;
-}
-
-.contato h1 {
-    font-size: 36px;
-    color: #103297;
-    margin-bottom: 30px;
-}
-
-.contato p {
-    font-size: 18px;
-    line-height: 1.8;
-    color: #444;
-    margin-bottom: 20px;
-}
-
-.conectlogo1{
-    width: 50px;
-    height: auto;
-    margin-top: 100px;
-    margin-left: 370px;
-    transition: transform 0.25s ease, filter 0.25s ease;
-}
-.conectlogo1:hover {
-    transform: scale(1.15);
-    filter: brightness(1.2);
-}
-
-.conectlogo2{
-    width: 50px;
-    height: auto;
-    margin-left: 40px;
-    transition: transform 0.25s ease, filter 0.25s ease;
-}
-.conectlogo2:hover {
-    transform: scale(1.15);
-    filter: brightness(1.2);
-}
-
-.conectlogo3{
-    width: 50px;
-    height: auto;
-    margin-left: 40px;
-    transition: transform 0.25s ease, filter 0.25s ease;
-}
-.conectlogo3:hover {
-    transform: scale(1.15);
-    filter: brightness(1.2);
-}
-
-.gif_back1{
-    width: 150px;     /* largura */
-    height: auto; 
-    margin-left: -120px;
-   
-    margin-top: 0px;
-}
-
-.localediv{
-  padding: 40px;
-  margin-top: -5px;
-  cursor: pointer;
-  pointer-events: auto;
-}
-
-.locale{
-    width: 40px;
-    margin-top: -10px;
-    margin-left: 25%;
-}
-
-.localeP{
-    margin-left: 27%;
-    margin-top: -33px;
-}
-
-.locale1{
-    width: 40px;
-    margin-top: 15px;
-    margin-left: 25%;
-}
-
-.emailP{
-    margin-left: 27.5%;
-    margin-top: -33px;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
+/* Hero */
 .hero {
     position: relative;
     width: 100%;
@@ -389,4 +199,241 @@ html {
     );
 }
 
+/* GIFs */
+.gif_1 {
+    width: 100px;
+    height: auto;
+    position: absolute;
+    top: -400px;
+    left: 60px;
+}
+
+.gif_back {
+    width: 150px;
+    height: auto;
+    margin-left: 240px;
+    margin-right: auto;
+    display: block;
+}
+
+.gif_back_bottom {
+    width: 150px;
+    margin-left: 40px;
+    height: auto;
+    margin-right: auto;
+    display: block;
+   
+}
+
+.gif_2 {
+    width: 120px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    
+}
+
+.seta {
+    width: 50px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Contato */
+.contato {
+    background-color: #ffffff;
+    padding: 80px 20px;
+    position: relative;
+    margin-top: 200px;
+}
+
+.contato-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.contato h1 {
+    font-size: 36px;
+    color: #103297;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.contato p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* Logos de Contato */
+.logos-contato {
+    text-align: center;
+}
+
+.conectlogo1,
+.conectlogo2,
+.conectlogo3 {
+    width: 50px;
+    height: auto;
+    margin: 10px 20px;
+    transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.conectlogo1:hover,
+.conectlogo2:hover,
+.conectlogo3:hover {
+    transform: scale(1.15);
+    filter: brightness(1.2);
+}
+
+/* Localização e Email */
+.localediv {
+    padding: 40px;
+    margin-top: -5px;
+    cursor: pointer;
+    pointer-events: auto;
+    text-align: center;
+}
+
+.locale,
+.locale1 {
+    width: 40px;
+    margin: 10px auto;
+    display: block;
+}
+
+.localeP,
+.emailP {
+    margin: 10px auto;
+    text-align: center;
+}
+
+/* Scroll Behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .header {
+        padding: 0 30px;
+    }
+
+    .logo img {
+        height: 200px;
+    }
+
+    .menu {
+        gap: 20px;
+    }
+
+    .categoria {
+        margin: 10px 20px;
+    }
+
+    .carousel {
+        gap: 15px;
+    }
+
+    .quem-somos,
+    .contato {
+        padding: 60px 20px;
+    }
+
+    .gif_1 {
+        left: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .logo img {
+        height: 110px;
+        margin-top: 0;
+    }
+
+    .menu {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .categoria {
+        margin: 10px 10px;
+    }
+
+    .carousel img {
+        height: 100px;
+    }
+
+    .quem-somos h1,
+    .contato h1 {
+        font-size: 28px;
+    }
+
+    .quem-somos p,
+    .contato p {
+        font-size: 16px;
+    }
+
+    .gif_1 {
+        position: static;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .gif_2 {
+        width: 280px;
+    }
+
+    .contato {
+        margin-top: 200px;
+    }
+
+    .localediv {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 10px;
+    }
+
+    .logo img {
+        height: 80px;
+    }
+
+    .menu a {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .carousel img {
+        height: 80px;
+    }
+
+    .quem-somos,
+    .contato {
+        padding: 40px 10px;
+    }
+
+    .gif_2 {
+        width: 200px;
+    }
+
+    .conectlogo1,
+    .conectlogo2,
+    .conectlogo3 {
+        width: 40px;
+    }
+}
 

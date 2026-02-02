@@ -173,7 +173,7 @@ body {
 /* Hero */
 .hero {
     position: relative;
-    width: 100%;
+    width: 120%;
     height: 60vh;
     overflow: hidden;
     background: black;
@@ -436,4 +436,5 @@ html {
         width: 40px;
     }
 }
+
 

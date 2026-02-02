@@ -184,7 +184,7 @@ body {
     top: 50%;
     left: 50%;
     width: 150%;
-    height: 200%;
+    height: 250%;
     transform: translate(-50%, -50%);
     pointer-events: none;
 }
@@ -436,6 +436,7 @@ html {
         width: 40px;
     }
 }
+
 
 
 

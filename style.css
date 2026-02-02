@@ -1,0 +1,392 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Corpo */
+body {
+    background-color: #f5f7fa;
+}
+
+/* Header */
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 90px;
+    padding: 0px 60px;
+
+    background: linear-gradient(90deg, #103297, #0b4dbb);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+    
+}
+
+/* Logo */
+.logo img {
+    height: 250px;
+    margin-top: 10px; /* faz a logo “invadir” o header */
+    margin-left: 300px;
+    padding: 10px;
+    transition: transform 0.3s ease;
+    
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+}
+
+/* Menu */
+.menu {
+    display: flex;
+    gap: 30px;
+    margin-right: 400px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 20px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Linha animada */
+.menu a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    left: 0;
+    bottom: 10px;
+    transition: width 0.3s ease;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+.menu a:hover {
+    color: #dce6ff;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .logo img {
+        height: 110px;
+        margin-top: 0;
+    }
+
+    .menu {
+        gap: 20px;
+    }
+}
+
+.categoria {
+    margin: 10px 400px;
+    padding: 5px;
+}
+
+.categoria h2 {
+    margin-bottom: 15px;
+    color: #103297;
+}
+
+
+.carousel-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.carousel {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+
+.carousel img {
+    height: 160px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.carousel img:hover {
+    transform: scale(1.05);
+}
+
+/*
+.btn {
+    background: #103297;
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 5px 14px;
+    cursor: pointer;
+    border-radius: 70%;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #0b4dbb;
+}
+*/
+
+.btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.arrow-gif {
+    width: 50px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.btn:hover .arrow-gif {
+    transform: scale(1.15);
+}
+/*----------------------*/
+.curso_position{
+    color:#103297;
+    margin-top: 100px;
+    margin-left: 300px;
+    padding: 30px;
+}
+
+.quem-somos {
+    background-color: #ffffff;
+    padding: 80px 20px;
+}
+
+.quem-somos-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.quem-somos h1 {
+    font-size: 36px;
+    color: #103297;
+    margin-bottom: 30px;
+}
+
+.quem-somos p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.hero {
+    position: relative;
+    height: 50vh;
+    overflow: hidden;
+}
+
+/*
+.hero video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+}
+    */
+
+.gif_1 {
+    width: 120px;     /* largura */
+    height: auto;     /* mantém proporção */
+    margin-top: -600px;   /* desce */
+    margin-left: -50px; /* vai pra esquerda */
+
+    
+    top: -400px;
+    left: 60px;
+}
+
+.gif_back{
+    width: 150px;     /* largura */
+    height: auto; 
+    margin-left: 320px;
+    margin-top: 0px;
+}
+
+.gif_2{
+    width: 360px; 
+    height: auto;
+    margin-left: 90px;
+    margin-top: -80px;
+}
+
+.seta{
+    width: 50px; 
+    height: auto;
+    margin-left: 90px;
+    margin-top: -80px;
+}
+
+
+.contato {
+    background-color: #ffffff;
+    padding: 80px 20px;
+    position: relative;
+    margin-top: 400px;
+}
+
+.contato-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.contato h1 {
+    font-size: 36px;
+    color: #103297;
+    margin-bottom: 30px;
+}
+
+.contato p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.conectlogo1{
+    width: 50px;
+    height: auto;
+    margin-top: 100px;
+    margin-left: 370px;
+    transition: transform 0.25s ease, filter 0.25s ease;
+}
+.conectlogo1:hover {
+    transform: scale(1.15);
+    filter: brightness(1.2);
+}
+
+.conectlogo2{
+    width: 50px;
+    height: auto;
+    margin-left: 40px;
+    transition: transform 0.25s ease, filter 0.25s ease;
+}
+.conectlogo2:hover {
+    transform: scale(1.15);
+    filter: brightness(1.2);
+}
+
+.conectlogo3{
+    width: 50px;
+    height: auto;
+    margin-left: 40px;
+    transition: transform 0.25s ease, filter 0.25s ease;
+}
+.conectlogo3:hover {
+    transform: scale(1.15);
+    filter: brightness(1.2);
+}
+
+.gif_back1{
+    width: 150px;     /* largura */
+    height: auto; 
+    margin-left: -120px;
+   
+    margin-top: 0px;
+}
+
+.localediv{
+  padding: 40px;
+  margin-top: -5px;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.locale{
+    width: 40px;
+    margin-top: -10px;
+    margin-left: 25%;
+}
+
+.localeP{
+    margin-left: 27%;
+    margin-top: -33px;
+}
+
+.locale1{
+    width: 40px;
+    margin-top: 15px;
+    margin-left: 25%;
+}
+
+.emailP{
+    margin-left: 27.5%;
+    margin-top: -33px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    background: black;
+}
+
+.hero iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150%;
+    height: 190%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(16, 50, 151, 0.6),
+        rgba(0, 0, 0, 0.6)
+    );
+}
+
+
